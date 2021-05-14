@@ -77,8 +77,9 @@ print('cuda:', torch.cuda.current_device())
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 img_size = args.aug_resize
-if args.augment == 'randaug':
 
+# https://github.com/ildoonet/pytorch-randaugment
+if args.augment == 'randaug':
     from RandAugment import RandAugment
     train_tfm = transforms.Compose([
         transforms.RandomResizedCrop((img_size, img_size)),   
@@ -337,6 +338,7 @@ def get_pseudo_labels2(args, model, threshold=0.65):
     model.train()
     return unlabeled_set
 
+# https://fastai.github.io/timmdocs/
 import timm
 
 if args.load_pretrain_model == 'tf_efficientnet_b5_lr4':
