@@ -41,7 +41,7 @@ parser.add_argument('--momentum', type=float, default=0.95)
 
 parser.add_argument('--opt_scheduler', type=str, default='none')
 parser.add_argument('--opt_scheduler_tinit', type=int, default=50)
-parser.add_argument('--opt_scheduler_cycle', type=int, default=1)
+parser.add_argument('--opt_scheduler_cycle', type=int, default=2)
 parser.add_argument('--opt_scheduler_warmup_t', type=int, default=10)
 parser.add_argument('--opt_scheduler_minlr', type=float, default=0.0003)
 # https://fastai.github.io/timmdocs/SGDR#cycle_limit

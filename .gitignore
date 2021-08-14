@@ -6,3 +6,13 @@ HW4/Dataset
 HW5/*
 HW6/*
 HW8/data-bin
+HW10/data
+HW10/*.tgz
+HW10/pytorch_cifar
+HW10/fgsm
+HW11/record
+HW11/real_or_drawing*
+HW13/record
+HW13/kd_mobile_aug
+HW13/food-11*
+
